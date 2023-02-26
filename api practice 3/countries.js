@@ -12,7 +12,8 @@ const displayCountry = countries=>{
     const countrydiv = document.createElement('div');
     countrydiv.classList.add('countrylist');
     
-      countrydiv.innerHTML=  `<h1>Country: ${country.name.common}</h1>`;
+      countrydiv.innerHTML=  `<h1>Country: ${country.name.common}</h1>
+      <h3>Capital: ${country.capital ? country.capital[0]:'no capital'}</h3>`;
 
         countriesContainer.appendChild(countrydiv);
     })
